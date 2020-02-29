@@ -15,7 +15,7 @@ remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "ko"
 title                    : "uk's blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
@@ -23,7 +23,7 @@ name                     : "uk's blog"
 description              : "정리 블로그"
 url                      : "https://dev-uk.github.io/"
 baseurl                  : "TIL"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "dev-uk/TIL"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
