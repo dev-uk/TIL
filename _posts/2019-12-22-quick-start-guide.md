@@ -8,15 +8,9 @@ tags:
   - Post Formats
 ---
 
-{% capture fig_img %}
-[![Foo](https://images.unsplash.com/photo-1541943869728-4bd4f450c8f5?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjF9)](https://unsplash.com/)
-{% endcapture %}
-
-{% capture fig_caption %}
-Image with a caption.
-{% endcapture %}
-
-<figure>
-  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
-  <figcaption>{{ fig_caption | markdownify | remove: "<p>" | remove: "</p>" }}</figcaption>
-</figure>
+<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="html,result" data-user="dev-uk" data-slug-hash="PoqOdLw" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="CSS-Selector-id">
+  <span>See the Pen <a href="https://codepen.io/dev-uk/pen/PoqOdLw">
+  CSS-Selector-id</a> by dev-uk (<a href="https://codepen.io/dev-uk">@dev-uk</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
