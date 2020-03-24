@@ -23,17 +23,22 @@ Accept-Language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
 ```
 github의 페이지 요청중 일부.
 
-GET / HTTP/1.1 은 request Line, 그 이후로는 request header, 통틀어 request Messagte header이다.
+GET / HTTP/1.1 은 request Line, 그 이후로는 request header, 통틀어 request Message header이다.
 
 ##### 시작줄 (GET / HTTP/1.1)
-첫번째 줄에 오며, 요청방식인 HTTP method(GET,POST 등) / 요청한 정보(1.html 등) / 사용중인 HTTP버전 (HTTP1.1,HTTP/2) 등 으로 이루어져 있다.
-요청방식으로 서버에서 특정 동작을 취하게끔 하고, 
+첫번째 줄에 오며, 요청방식인 HTTP method(GET,POST 등) / 요청한 정보(1.html 등) / 사용중인 HTTP버전 (HTTP1.1,HTTP1.0) 등 으로 이루어져 있다.
+EX) get 형식으로 background.png 이미지 파일을 요청한다
+```
+GET / background.png / HTTP 1.1
+```
 
 ##### HOST
-서버의 도메인 네임이 
+서버의 도메인 네임을 보여준다.
 
 
 
 
 ### reference
 https://www.youtube.com/watch?v=1TigiIAPipA
+https://developer.mozilla.org/ko/docs/Web/HTTP/Messages
+https://www.zerocho.com/category/HTTP/post/5b3ba2d0b3dabd001b53b9db
