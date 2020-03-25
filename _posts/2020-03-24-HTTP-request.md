@@ -36,7 +36,19 @@ GET / background.png / HTTP 1.1
 ##### HOST
 서버의 도메인 네임을 보여준다.
 
+****
+##### User-Agent
+User-Agent 헤더는 사용자의 클라이언트 정보(운영체제, 브라우저 등)를 보여준다.
 
+
+****
+##### Accept
+
+****
+##### Authorization
+
+****
+##### Origin
 
 
 ### reference
