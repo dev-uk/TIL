@@ -4,7 +4,7 @@
 
 HTTP 메세지 중 request는 요청으로써, 클라이언트가 요청에 대한 정보를 담아 서버로 서비스를 요청하는 메세지이다.
 
-#### HTTP request header
+### HTTP request header
 
 ```
 GET / HTTP/1.1
@@ -25,7 +25,7 @@ Accept-Language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
 
 GET / HTTP/1.1 은 request Line, 그 이후로는 request header, 통틀어 request Message header이다.
 ****
-##### 시작줄 (GET / HTTP/1.1)
+#### 시작줄 (GET / HTTP/1.1)
 첫번째 줄에 오며, 요청방식인 HTTP method(GET,POST 등) / 요청한 정보(1.html 등) / 사용중인 HTTP버전 (HTTP1.1,HTTP1.0) 등 으로 이루어져 있다.
 EX) get 형식으로 background.png 이미지 파일을 요청한다
 ```
@@ -33,19 +33,19 @@ GET / background.png / HTTP 1.1
 ```
 
 ****
-##### HOST
+#### HOST
 서버의 도메인 네임을 보여준다.
 
 ****
-##### User-Agent
+#### User-Agent
 User-Agent 헤더는 사용자의 클라이언트 정보(운영체제, 브라우저 등)를 보여준다.
 
 
 ****
-##### Accept
+#### Accept
 
 ****
-##### Accept-Encoding
+#### Accept-Encoding
 Accept-Encoding 헤더는 클라이언트가 이해 가능한 컨텐츠 인코딩이 무엇인지 보여준다.
 요청에 의해 데이터를 받을때 압축된 데이터를 받는다.
 클라이언트가 지원하는 압축 방식을 Accept-Encoding 헤더에 담아 보내주고,
@@ -54,13 +54,13 @@ Accept-Encoding 헤더는 클라이언트가 이해 가능한 컨텐츠 인코�
 
 
 ****
-##### Authorization
+#### Authorization
 
 ****
-##### Origin
+#### Origin
 
 ****
-##### IF-Modified-since
+#### IF-Modified-since
 
 
 ### reference
