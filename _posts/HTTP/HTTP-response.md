@@ -34,6 +34,10 @@ HTTP/1.1 200 OK
 | 50x     | 서버 에러|
 
 ### Content-Type
+서버가 응답할 때 응답의 타입을 보여준다.
+
+### Content-Encoding
+해당 컨텐츠의 압축 방식.
 
 ### Content-Disposition
 
