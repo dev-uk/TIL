@@ -4,4 +4,4 @@
 - [HTTP-request](HTTP/HTTP-request.md)
 - [HTTP-response](HTTP/HTTP-response.md)
 - [HTTP-Cookie](HTTP/HTTP-Cookie.md)
-- [HTTP-Chche](HTTP/HTTP-Chche.md)
+- [HTTP-Cache](HTTP/HTTP-Cache.md)
