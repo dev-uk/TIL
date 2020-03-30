@@ -34,6 +34,7 @@ script 시작 또는 함수 부분에 'use strict' 라고 선언한다
 
 
 
+
 > 읽기 전용 속성에 할당 불가
 
 ![test](/_resource/image/JavaScript/JavaScript-strict_mode-02.PNG)
