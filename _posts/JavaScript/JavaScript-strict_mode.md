@@ -33,6 +33,23 @@ script 시작 또는 함수 부분에 'use strict' 라고 선언한다
 ![test](/_resource/image/JavaScript/JavaScript-strict_mode-01.PNG)
 
 
+> 읽기 전용 속성에 할당 불가
+
+![test](/_resource/image/JavaScript/JavaScript-strict_mode-02.PNG)
+
+
+https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Strict_mode
+
+이곳에서 더 많은 적용 코드를 볼 수 있다.
+
+
+### ES6에서 strict mode
+
+ES6에서는 strict mode가 기본이기 때문에 설정해줄 필요없다
+
+
+
+
 
 ### reference
 https://blog.aliencube.org/ko/2014/01/02/reasons-behind-using-strict-mode-while-coding-javascript/
