@@ -18,7 +18,9 @@ script 시작 또는 함수 부분에 'use strict' 라고 선언한다
    ...
 </script>
 ```
+
 <br>
+
 > 함수 내에 선언하여 함수의 모든 코드에 strict mode를 적용함
 ```
   function strict(){
@@ -26,6 +28,7 @@ script 시작 또는 함수 부분에 'use strict' 라고 선언한다
     ...
   }
 ```
+
 <br>
 ### strict mode 적용 예시
 <br>
