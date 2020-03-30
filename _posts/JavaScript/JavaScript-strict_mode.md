@@ -28,17 +28,13 @@ script 시작 또는 함수 부분에 'use strict' 라고 선언한다
 
 ### strict mode 적용 예시
 
-> eval 이라는 변수명을 사용할 수 없게함
+> eval 이라는 변수명을 사용할 수 없게함  
 
-![test](/_resource/image/JavaScript/JavaScript-strict_mode-01.PNG)
+![test](/_resource/image/JavaScript/JavaScript-strict_mode-01.PNG)  
+<br>  
+> 같은 이름의 매개변수 사용 불가  
 
-
-
-
-> 읽기 전용 속성에 할당 불가
-
-![test](/_resource/image/JavaScript/JavaScript-strict_mode-02.PNG)
-
+![test](/_resource/image/JavaScript/JavaScript-strict_mode-02.PNG)  
 
 https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Strict_mode
 
