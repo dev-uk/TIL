@@ -30,4 +30,51 @@ https://ko.javascript.info/variables
 
 코드 문맥상 변수가 가르키는 데이터나 값이 명확할 때에만 사용한다.  
 
-https://ko.javascript.info/variables
+https://ko.javascript.info/variables   
+
+### 함수는 동작 하나만 담당해야한다.  
+
+함수는 함수 이름에 언급되어있는 동작만을 정확히 수행해야 하며, 그 이외의 동작은 수행해선 안 된다.
+
+`getAge` 함수는 나이를 얻어오는 동작만 수행 해야함.  
+`alert`창에 나이를 출력해주는 동작은 이 함수에 들어가지 않는 것이 좋음.  
+
+#### example  
+
+**bad case**
+```
+function showPrimes(n) {
+  nextPrime: for (let i = 2; i < n; i++) {
+
+    for (let j = 2; j < i; j++) {
+      if (i % j == 0) continue nextPrime;
+    }
+
+    alert( i ); // 소수
+  }
+}
+```  
+소수를 보여주는 `alert` 역할 외의 소수를 판별 하는 동작을 하고있다.  
+
+**good case**
+```
+function showPrimes(n) {
+
+  for (let i = 2; i < n; i++) {
+    if (!isPrime(i)) continue;
+
+    alert(i);  // a prime
+  }
+}
+
+function isPrime(n) {
+  for (let i = 2; i < n; i++) {
+    if ( n % i == 0) return false;
+  }
+  return true;
+}
+```  
+소수를 판별 하는 `isPrime` 함수와 소수를 보여주는 `showPrimes` 역할을 잘 분류하였다.  
+위와 같이 작성시 코드의 재사용성을 높이고 코드가 정돈되어 가독성이 높아진다.  
+
+https://ko.javascript.info/function-basics
