@@ -100,7 +100,7 @@
   
 ```
 
-`if` 블록 밖에 welcome 을 선언 해줌으로 welcome 함수를 선언 할 수 있다. 
+`if` 블록 밖에 welcome 을 선언 해줌으로 welcome 함수를 호출 할 수 있다. 
 
 
 ### reference  
