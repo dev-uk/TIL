@@ -30,7 +30,9 @@ script 시작 또는 함수 부분에 'use strict' 라고 선언한다
 ```
 
 <br>
+
 ### strict mode 적용 예시
+
 <br>
 > eval 이라는 변수명을 사용할 수 없게함  
 
