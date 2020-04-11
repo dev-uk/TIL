@@ -9,3 +9,7 @@
 ## [HTTP](_posts/HTTP/index.md)
 
 ## [VScode](_posts/VScode/index.md)
+
+## [JQuery](_posts/JQuery/index.md)
+
+## [Java](_posts/JAVA/index.md)
