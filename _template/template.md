@@ -32,7 +32,7 @@ index
     > ex) # JavaScript
 
 - 포스팅 리스트를 목록(`-`) 으로 작성하고 md 파일 링크를 삽입한다.
-    > ex) ### `[JavaScript-엄격모드](_posts/JavaScript/JavaScript-strict_mode.md)`   
+    > ex) - `[JavaScript-엄격모드](_posts/JavaScript/JavaScript-strict_mode.md)`   
 
 
 ### 2-2. 포스팅 파일
