@@ -45,3 +45,9 @@ let sum = (a,b) => {
 중괄호로 묶은경우 명시적으로 `return` 을 사용하여 결과값을 반환해야 한다. 
 
 
+
+
+### reference
+
+https://ko.javascript.info/arrow-functions-basics   
+
