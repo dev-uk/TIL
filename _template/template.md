@@ -31,12 +31,9 @@ index
 - 최상단에 대분류 명 h1(`#`) 으로 작성
     > ex) # JavaScript
 
-- 포스팅 리스트를 h3(`###`) 으로 작성하고 md 파일 링크를 삽입한다.
-    > ex) ### `[JavaScript-struct_mod](_posts/JavaScript/JavaScript-strict_mode.md)`   
+- 포스팅 리스트를 목록(`-`) 으로 작성하고 md 파일 링크를 삽입한다.
+    > ex) ### `[JavaScript-엄격모드](_posts/JavaScript/JavaScript-strict_mode.md)`   
 
-    추후 주제들을 중분류로 나누기 위함.
-
-- 포스팅 타이틀 하단에 코드블럭 `[```]` 으로 포스팅에 대한 간단한 설명 글 작성
 
 ### 2-2. 포스팅 파일
 
