@@ -112,8 +112,12 @@ public void ignoreMethod() {
 }
 
 @Test
-public void testMethod() {
-  System.out.println("@Test");
+public void testMethod1() {
+  System.out.println("@Test1");
+}
+@Test
+public void test1Method2() {
+  System.out.println("@Test2");
 }
 ```
 
@@ -121,7 +125,10 @@ public void testMethod() {
 ```
 @BeforeClass
 @Before
-@Test
+@Test1
+@after
+@Before
+@Test2
 @after
 @AfterClass
 ```    
