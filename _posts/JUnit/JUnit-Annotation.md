@@ -55,9 +55,12 @@ public void afterClassMethod(){
 ### @Before
 `@Test` 메소드 **이전**에 수행되며, **매번** 수행된다.   
 `@Test` 메소드 수행에 공통으로 필요한 코드를 작성할 때 사용한다.   
+테스트 수행시 매번 설정하는것이 비효율적인 DB설정등을 한 번만 설정하여, 여러 테스트에서 공유하여 사용한다.   
+`static`을 붙여 줘야 한다.
+
 ```
 @Before
-public void beforeMethod(){
+public static void beforeMethod(){
   ...(@Test 이전 매번 실행될 로직)
 }
 ```
@@ -65,12 +68,64 @@ public void beforeMethod(){
 ### @After
 `@Test` 메소드 **이후**에 수행되며, **매번** 수행된다.
 `@Test` 메소드에서 사용한 자원을 해제할 때 사용한다.
+메소드는 `static`이여야 한다.
 ```
 @After
-public void afterMethod(){
+public static void afterMethod(){
   ...(@Test 이후 매번 실행될 로직)
 }
 ```   
+
+### @Ignore   
+`@Ignore`가 선언된 메소드는 테스트를 실행하지 않는다.
+```
+public void ignoreMethod(){
+  ...(테스트가 되지 않는 메소드)
+}
+```
+
+### 호출 순서 보기   
+```
+@BeforeClass
+public static void beforeClassMethod() {
+  System.out.println("@BeforeClass");
+}
+
+@AfterClass
+public static void afterClassMethod() {
+  System.out.println("@AfterClass");
+}
+
+@Before
+public void beforeMethod() {
+  System.out.println("@Before");
+}
+
+@After
+public void afterMethod() {
+  System.out.println("@after");
+}
+
+@Ignore
+public void ignoreMethod() {
+  System.out.println("@Ignore");
+}
+
+@Test
+public void testMethod() {
+  System.out.println("@Test");
+}
+```
+
+#### 출력   
+```
+@BeforeClass
+@Before
+@Test
+@after
+@AfterClass
+```    
+</br></br></br></br>
 
 
 
