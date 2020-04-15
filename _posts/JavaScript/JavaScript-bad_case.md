@@ -3,7 +3,7 @@
 ### bad case
 java script 를 작성하면서 :thumbsup:좋은 방법, :thumbsup:좋은 습관이나,:thumbsdown:나쁜 습관, :thumbsdown:나쁜 방법들을 정리
 
-### 변수 없이 선언
+### :black_medium_small_square: 변수 없이 선언
 :thumbsdown:
 ```
   //변수형 var 나 let 없이도 생성이 된다.
@@ -24,7 +24,7 @@ https://ko.javascript.info/variables
 
 <br>
 
-### 변수명명규칙
+### :black_medium_small_square: 변수명명규칙
 :thumbsdown:
 ```
   let a = 1;
@@ -33,8 +33,8 @@ https://ko.javascript.info/variables
 ```
 :thumbsup:
 ```
-  let num1 = 1;
-  let num2 = 2;
+  let firstNum = 1;
+  let secondNum = 2;
   let sum = num1 + num2;
 ```
 
@@ -45,7 +45,7 @@ https://ko.javascript.info/variables
 https://ko.javascript.info/variables   
 
 
-### 함수는 동작 하나만 담당해야한다.  
+### :black_medium_small_square: 함수는 동작 하나만 담당해야한다.  
 
 함수는 함수 이름에 언급되어있는 동작만을 정확히 수행해야 하며, 그 이외의 동작은 수행해선 안 된다.
 
@@ -91,4 +91,100 @@ function isPrime(n) {
 
 https://ko.javascript.info/function-basics
 
+
+### :black_medium_small_square: 내용이 긴 문자열
+
+가로로 길게 늘어진 문자열은 백틱(`)을 사용하여 여러줄로 나누자.   
+:thumbsdown:
+```
+  let str = ECMA International's TC39 is a group of JavaScript developers,
+implementers, academics, and more, collaborating with the community
+  to maintain and evolve the definition of JavaScript.
+```   
+:thumbsup:
+```
+  let str = `
+  ECMA International's TC39 is a group of JavaScript developers,
+  implementers, academics, and more, collaborating with the community
+  to maintain and evolve the definition of JavaScript.  
+  `;
+```
+
+### :black_medium_small_square: 중첩 레벨 최소화
+가능하면 깊은 중첩문은 피하는게 좋다.
+
+`continue`, `return` 등 으로 중첩 레벨을 줄여 코드의 가독성을 향상 시키자.
+
+:thumbsdown:
+```
+function pow(x, n) {
+  if (n < 0) {
+    alert("'n'은 음수가 될 수 없습니다.");
+  } else {
+    let result = 1;
+
+    for (let i = 0; i < n; i++) {
+      result *= x;
+    }
+
+    return result;
+  }
+}
+```
+
+:thumbsup:
+```
+function pow(x, n) {
+  if (n < 0) {
+    alert("'n'은 음수가 될 수 없습니다.");
+    return;
+  }
+
+  let result = 1;
+
+  for (let i = 0; i < n; i++) {
+    result *= x;
+  }
+
+  return result;
+}
+```
+위의 두가지 코드는 동일하게 동작한다.   
+`if`문에서 조건을 확인후 `return` 하거나 부합하지 않으면 중첩 레벨에 속하지 않고 주요 로직으로 넘어가도록 하여 가독성이 좋다.
+
+### :black_medium_small_square: 주석 작성법
+
+좋은 코드에는 설명이 많은 주석이 많아서는 안된다.
+코드에서 무슨일이 일어나는지...등
+
+:thumbsdown:
+```
+  // (...)와 (...)등을 수행...
+```
+
+
+함수는 주석이 없어도 그 존재 자체가 무슨 역할을 하는지 이름으로서 설명해야 한다.   
+이는 **자기 설명적인 코드** 라고 한다.   
+:thumbsup:
+```
+function showPrimes(n){...}
+function isPrime(){...}
+```
+
+#### 함수 용례와 매개변수 정보를 담고 있는 주석
+
+`JSDoc`을 사용해서 함수에 관한 문서를 쉽게 작성할 수 있다.
+:thumbsup:
+```
+/**
+ * x를 n번 곱한 수를 반환함
+ *
+ * @param {number} x 거듭제곱할 숫자
+ * @param {number} n 곱할 횟수, 반드시 자연수여야 함
+ * @return {number} x의 n 거듭제곱을 반환함
+ */
+function pow(x, n) {
+  ...
+}
+```
 
