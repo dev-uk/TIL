@@ -39,7 +39,22 @@
   alert(user.name) //'byeong uk';
 ```
 
+### 깊은 복사   
+객체를 참조하는 메모리 주소가 아닌 객체 자체를 복사하는 방법.   
+1. 새로운 객체를 생성하고 복사할 객체의 프로퍼티를 순회해 원시 수준까지 프로퍼티를 복사
+```
+  let cloneUser = {};
   
+  // 빈 객체에 프로퍼티를 전부 복사
+  for(let key in user){
+    cloneUser[key] = user[key];
+  }
+
+```
+2. Object.assign 사용   
+```
+  let cloneUser = Object.assign({}, user);
+```
   
   
   
