@@ -188,3 +188,59 @@ function pow(x, n) {
 }
 ```
 
+###   :black_medium_small_square:  연산 순서
+
+`or(||)` 와 `and(&&)` 연산할 때 순서가 중요하다.
+
+:thumbsup:
+```
+  const value1 = true;
+  const value2 = false;
+  
+  /* or */
+  if(value1 || value2 || check()){...}
+
+```
+
+`or` 연산은 한가지라도 `true` 면 실행하여 뒤에 연산 하지 않으므로, 가벼운 로직이면서 true인 빈도가 높은 연산을 먼저 실행한다.
+
+`check()` 같이 무거운 연산을 하는 함수를 제일 뒤에서 체크하도록 한다.
+
+:thumbsup:
+```
+  const value1 = true;
+  const value2 = false;
+  
+  /* and */
+  if(value2 && value1 && check()){...}
+
+```
+`and`연산은 한가지라도 `false`면 실행하지 않는 논리 연산자이므로, 역시 `false` 빈도가 높은 연산을 먼저 실행하도록 배치 한다.
+
+마찬가지로 `check()` 같은 무거운 연산을 하는 함수를 제일 뒤에서 체크하도록 한다.
+
+
+
+### :black_medium_small_square:  Early return, early exit   
+
+:thumbsdown:
+```
+  function upgradeUser(user){
+    if(user.point > 10){
+      ...// upgrade logic...
+    }
+    ...
+  }
+```
+
+조건을 여러번 체크할때에는 먼저 false인 경우를 체크하여 빠르게 `return` 하도록 한다.
+
+:thumbsup:
+```
+  function upgradeUser(user){
+    if(user.point <= 10){
+      return;
+    }
+    ...// upgrade logic
+  }
+```

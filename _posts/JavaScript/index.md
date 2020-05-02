@@ -1,8 +1,6 @@
 # JavaScript
 
-- [JavaScript Bad case](JavaScript-bad_case.md)
-
-- [JavaScript Good case](JavaScript-Good_Case.md)
+- [JavaScript 작성시 좋은 습관 , 나쁜 습관](JavaScript-JavaScript-good&bad_case.md)
 
 - [JavaScript 엄격모드](JavaScript-strict_mode.md)
 
@@ -19,3 +17,5 @@
 - [JavaScript 화살표 함수 기초](JavaScript-arrow_function.md)   
 
 - [JavaScript 객체 기초](JavaScript-Object.md)
+
+- [JavaScript async VS defer](JavaScript-async&defer.md)
