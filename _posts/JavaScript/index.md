@@ -19,3 +19,5 @@
 - [JavaScript 객체 기초](JavaScript-Object.md)
 
 - [JavaScript async VS defer](JavaScript-async&defer.md)
+
+- [JavaScript Mocha와Chai 를 사용한 테스트 자동화](JavaScript-Mocha&Chai.md)
