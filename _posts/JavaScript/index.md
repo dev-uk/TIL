@@ -23,3 +23,5 @@
 - [JavaScript callback 함수](JavaScript-callback_function.md)
   
 - [JavaScript Mocha와Chai 를 사용한 테스트 자동화](JavaScript-Mocha&Chai.md)
+
+- [JavaScript 클로저](JavaScript-Closure.md)
