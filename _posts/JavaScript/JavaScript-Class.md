@@ -67,7 +67,18 @@ set age(value){
 
 생성자안의 `this.age`는 `getter`를 호출한다.
 
-또 `age`를 `this.age`에 값을 할당하기 위해 `setter`한다.
+또 `this.age`에 `age` 할당하기 위해 `setter`를 호출한다.
 
 이는 `setter`안에서 `this.age`에 값을 할당하기 위해 `setter`인 자신을 무한호출함으로 에러가 발생한다.
 
+이를 해결하기 위해 변수 이름을 다르게 해준다.
+
+```
+get age(){
+    return this._age;
+}
+
+set age(value){
+    this._age = value;
+}
+```
