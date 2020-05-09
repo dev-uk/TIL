@@ -82,3 +82,51 @@ set age(value){
     this._age = value;
 }
 ```
+
+## public & priate field
+
+일반적인 `public` field와 `class` 내부에서만 접근 가능한 `private `field
+
+```
+class Experiment{
+
+    // 외부에서도 접근 가능한 field
+    publicField = 1;
+
+    // class 내부에서만 접근 가능한 field
+    #privateField = 2;
+
+}
+
+const experiment = new Experiment();
+console.log(experiment.publicField);
+console.log(experiment.privateField);
+```
+
+**결과**
+> 1   
+> undefined
+
+`private` field는 class 내부에서만 읽고 수정이 가능하다.
+
+
+## static
+
+`class`의 `object`마다 생성되는 것이 아닌 `class`자체의 공통적인 역할을 하는 정적인 property
+
+```
+class StaticMethodCall{
+    static staticMethod(){
+        return console.log("static Method call");        
+    }
+
+}
+
+const staticMethodCall = new StaticMethodCall();
+
+// 에러발생
+staticMethodCall.staticMethod();
+
+StaticMethodCall.staticMethod();
+
+```
