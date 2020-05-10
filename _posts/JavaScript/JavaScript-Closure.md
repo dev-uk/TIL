@@ -8,7 +8,7 @@
 function outter(){
     var name = 'outter function name';
     function inner(){
-        alert(name);
+        consloe.log(name);
     }
 }
 ```
@@ -16,4 +16,8 @@ function outter(){
 내부함수인 `inner`함수를 가지고있다.
 
 내부함수인 `inner`는 외부함수인 `outter`의 변수인 `name`에 접근할 수 있다.
+
+**결과**
+> outter function name
+
 
