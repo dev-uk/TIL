@@ -35,9 +35,12 @@
   - prototype 
 - `constructor-arg` : 생성자에 전달할 인수
 - `property` : 생성시 bean setter에 전달할 인수
-  
+ 
+## Singleton bean
+`Singleton`패턴으로 생성된 `bean`은 최초 한 번만 생성되고, 하나의 `bean`만 참조하여 사용한다. 
+기본적으로 `bean` 생성 설정은 `Singleton` 이다. 
 
-
+[Singleton Pattern정리](/_posts/Design%20Pattern/Singleton.md)
 
 
 
