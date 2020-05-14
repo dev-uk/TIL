@@ -20,10 +20,27 @@ WHERE 중첩 서브쿼리
 
 ### 1. 스칼라 서브쿼리
 
- SELECT 문에 작성하며, 
+ - SELECT 문에 작성
+ - 하나의 레코드(row) 만 리턴
+ - 데이터 건수가 적을 경우 `JOIN` 방식보다 유리
 
+#### 부서 이름을 구하는 예시 쿼리   
+`JOIN` 을 이용한 쿼리
+```
+ SELECT
+  EEPTNO, ENAME, EMP.DEPNO, DNAME 
+ FROM EMP, DEPT
+ WHERE EMP.DEPTNO = DEPT.DEPTNO;
 
+```
 
+`스칼라 서브쿼리`를 이용한 쿼리
+```
+ SELECT 
+  EMPNO, ENAME, DEPTNO, 
+  (SELECT DNAME FROM DEPT WHERE EMP.DEPTNO = DEPT.DEPTNO) DNAME
+  FROM EMP
+```
 
 
 
