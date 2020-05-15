@@ -66,3 +66,7 @@ SELECT LEAST('B','c','a') STR;
 > a
 
 
+### reference
+https://www.w3schools.com/sql/func_mysql_greatest.asp   
+https://www.w3schools.com/sql/func_mysql_least.asp
+
