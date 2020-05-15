@@ -1,0 +1,1 @@
+# LEAST , GREATEST 내장함수
