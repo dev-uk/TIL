@@ -1,6 +1,6 @@
 # web.xml
 
-
+https://www.notion.so/byeonguk/web-xml-8fd035da084a4163a588462a1f026766
 
 ## web.xml이란?
 
@@ -51,3 +51,4 @@ WAS가 최초 구동할때 WEB-INF 디렉토리에 존재하는 web.xml을 읽�
 - 리스너/필터 설정
 - 보안설정
 -
+
