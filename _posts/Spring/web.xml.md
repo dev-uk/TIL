@@ -1,7 +1,6 @@
 # web.xml
 
-Created: May 17, 2020 9:41 PM
-Tags: Setting
+
 
 ## web.xml이란?
 
